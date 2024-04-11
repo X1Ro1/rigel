@@ -1,0 +1,869 @@
+* {
+    box-sizing:  border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "SFProText";
+}
+@font-face {
+    font-family: "SFProText";
+    src: url(../fonts/SFProText-Regular.ttf);
+}
+@font-face {
+    font-family: "SFProTextmedium";
+    src: url(../fonts/SFProText-Medium.ttf);
+}
+@font-face {
+    font-family: "SFProTextbold";
+    src: url(../fonts/SFProText-Bold.ttf);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1300px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-reg {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    gap: 30px;
+}
+.header-menu a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #242424;
+    font-family: "SFProTextmedium";
+    transition: 0.1s;
+}
+.header-menu a:hover {
+    color: #ee5b5b;
+    transition: 0.1s;
+}
+
+
+
+.header-reg {
+    display: flex;
+    gap: 20px;
+}
+.header-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    background: #F5F5F5;
+}
+
+.search-txt{
+    border: none;
+    width: 100px;
+    background: none;
+    outline: none;
+}
+.search-img {
+    border: none;
+    background: none;
+}
+
+
+
+
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1300px;
+}
+
+.main-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-bannerOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #FEBA74;
+    border-radius: 10px;
+}
+
+.main-bannerOne-txt h1{
+    font-family: "SFProTextbold";
+    font-size: 40px;
+}
+.main-bannerOne-txt{
+    padding: 32px;
+}
+.main-bannerOne-txt a{
+    background: white;
+    color: #242424;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+.main-bannerOne-txt a:hover {
+    background: rgb(248, 245, 245);
+    transition: 0.1s;
+}
+.main-bannerOne-img img{
+    float: right;
+}
+
+
+
+.main-bannerTwo {
+    display: flex;
+    gap: 30px;
+}
+
+.main-card {
+    border-radius: 10px;
+    transition: 0.2s;
+    width: 300px;
+    height: 160px;
+}
+.main-card:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+}
+.main-card img{
+    width: 130px;
+    float: right;
+}
+
+.main-card h1{
+    font-size: 18px;
+}
+
+.main-card-name{
+    padding: 10px;
+}
+
+
+
+
+.main-green {
+    background: #A2F29C;
+}
+.main-blue{
+    background: #8EC8F6;
+}
+.main-pink{
+    background: #FB9B9B;
+}
+.main-aqua{
+    background: #9EEDF8;
+}
+
+
+
+
+
+
+
+.main-full-card-txt {
+    background: #F5F5F5;
+    width: 300px;
+    padding: 14px;
+}
+
+.main-full-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.main-full-card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.main-full-card-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #242424;
+    text-decoration: none;
+    width: 100%;
+    background: #F5F5F5;
+    padding: 1em;
+    transition: 0.1s;
+}
+
+.main-full-card-btn a:hover{
+    background: #ee5b5b;
+    color: white;
+    transition: 0.1s;
+}
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #242424;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1300px;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #242424;
+}
+.footer-inner p,a{
+    color: white;
+}
+.footer-contact {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    .header-logo img{
+        width: 100px;
+    }
+
+    .header-container {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .header-reg {
+        display: flex;
+        gap: 10px;
+    }
+    .header-reg img{
+        width: 36px;
+    }
+    .header-search {
+        padding: 8px;
+    }
+
+    .header-search img{
+        width: 16px;
+    }
+    .header-search input{
+        font-size: 12px;
+    }
+    .header-menu a{
+        font-size: 14px;
+        width: auto;
+    }
+
+    .main-bannerOne {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .main-bannerOne-txt h1{
+        font-size: 30px;
+    }
+    .main-bannerOne-txt a{
+        background: white;
+        color: #242424;
+        text-decoration: none;
+        padding: 6px 20px;
+        border-radius: 10px;
+        transition: 0.1s;
+        font-size: 14px;
+    }
+
+    /* карточки */
+    .main-bannerTwo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    /* карточки */
+
+    /* карточки с продуктами */
+    .main-full-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    /* футер */
+    .footer-container {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .footer-contact {
+        display: flex;
+        gap: 20px;
+    }
+    .footer-contact p,a{
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .header-logo img{
+        width: 80px;
+    }
+
+    .header-container {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .header-reg {
+        display: flex;
+        gap: 10px;
+    }
+    .header-menu {
+        display: flex;
+        gap: 16px;
+    }
+    .header-reg img{
+        width: 36px;
+    }
+    .header-search {
+        padding: 8px;
+    }
+
+    .header-search img{
+        width: 14px;
+    }
+    .header-search input{
+        font-size: 10px;
+    }
+    .header-menu a{
+        font-size: 12px;
+        width: auto;
+    }
+    .search-txt{
+        border: none;
+        width: 80px;
+        background: none;
+        outline: none;
+    }
+
+
+
+    .main-bannerOne {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-bannerOne-img img{
+        width: 294px;
+        height: 200px;
+    }
+    .main-bannerOne-txt h1{
+        font-size: 26px;
+    }
+    .main-bannerOne-txt h4{
+        font-size: 16px;
+    }
+  
+
+    /* карточки с продуктами */
+    .main-full-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    /* футер */
+    .footer-container {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .footer-nameCompany p{
+        font-size: 14px;
+    }
+
+    .footer-contact {
+        display: flex;
+        gap: 20px;
+    }
+    .footer-contact p,a{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+    .header-logo img{
+        width: 70px;
+    }
+
+    .header-container {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .header-reg {
+        display: flex;
+        gap: 10px;
+    }
+    .header-menu {
+        display: flex;
+        gap: 10px;
+    }
+    .header-reg img{
+        width: 30px;
+    }
+    .header-search {
+        padding: 8px;
+    }
+
+    .header-search img{
+        width: 14px;
+    }
+    .header-search input{
+        font-size: 10px;
+    }
+    .header-menu a{
+        font-size: 10px;
+        width: auto;
+    }
+    .search-txt{
+        width: 80px;
+    }
+
+
+
+    .main-bannerOne {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-bannerOne-img img{
+        width: 250px;
+        height: 210px;
+    }
+    .main-bannerOne-txt h1{
+        font-size: 22px;
+    }
+    .main-bannerOne-txt h4{
+        font-size: 12px;
+    }
+
+    /* каталог */
+    .main-bannerTwo {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .main-card {
+        border-radius: 10px;
+        transition: 0.2s;
+        width: 250px;
+        height: 160px;
+    }
+
+    .main-card img{
+        width: 100px;
+    }
+
+    .main-h1 h1{
+        font-size: 24px;
+    }
+
+
+
+
+    /* карточки с продуктами */
+    .main-full-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .main-full-card-img img{
+        width: 250px;
+    }
+    .main-full-card-txt {
+        background: #F5F5F5;
+        width: 250px;
+        padding: 14px;
+    }
+
+    .main-full-card-txt h1{
+        font-size: 16px;
+    }
+    .main-full-card-txt p{
+        font-size: 12px;
+    }
+    
+
+    /* футер */
+    .footer-container {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .footer-nameCompany p{
+        font-size: 14px;
+    }
+
+    .footer-contact {
+        display: flex;
+        gap: 10px;
+    }
+    .footer-contact p,a{
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 560px) {
+    .header-logo img{
+        width: 50px;
+    }
+
+    .header-container {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .header-reg {
+        display: flex;
+        gap: 4px;
+    }
+
+
+    .header-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .header-menu a{
+        font-size: 8px;
+        width: auto;
+        border: 1px solid #242424;
+        padding: 4px;
+        border-radius: 4px;
+    }
+
+
+
+    .header-reg img{
+        width: 24px;
+    }
+    .header-search {
+        padding: 4px 10px;
+    }
+
+    .header-search img{
+        width: 10px;
+    }
+    .header-search input{
+        font-size: 8px;
+    }
+    
+    .search-txt{
+        width: 60px;
+    }
+
+
+
+    .main-bannerOne {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-bannerOne-img img{
+        width: 200px;
+        height: 210px;
+    }
+    .main-bannerOne-txt h1{
+        font-size: 20px;
+    }
+    .main-bannerOne-txt h4{
+        font-size: 12px;
+    }
+
+    /* каталог */
+    .main-bannerTwo {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .main-card {
+        border-radius: 10px;
+        transition: 0.2s;
+        width: 200px;
+        height: 140px;
+    }
+
+    .main-card img{
+        width: 100px;
+    }
+
+    .main-h1 h1{
+        font-size: 24px;
+    }
+
+
+
+
+    /* карточки с продуктами */
+    .main-full-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .main-full-card-img img{
+        width: 200px;
+    }
+    .main-full-card-txt {
+        background: #F5F5F5;
+        width: 200px;
+        padding: 14px;
+    }
+
+    .main-full-card-txt h3{
+        font-size: 12px;
+    }
+    .main-full-card-txt p{
+        font-size: 8px;
+    }
+    
+
+    /* футер */
+    .footer-container {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .footer-nameCompany p{
+        font-size: 12px;
+    }
+
+    .footer-contact {
+        display: flex;
+        gap: 4px;
+    }
+    .footer-contact p,a{
+        font-size: 8px;
+    }
+    .footer-inner img{
+        width: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 461px) {
+    .header-logo img{
+        width: 40px;
+    }
+
+    .header-container {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .header-reg {
+        display: flex;
+        gap: 4px;
+    }
+
+    .header-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .header-menu a{
+        font-size: 6px;
+        width: auto;
+        border: 1px solid #242424;
+        padding: 2px;
+        border-radius: 2px;
+    }
+
+    .header-reg img{
+        width: 24px;
+    }
+
+    .header-search {
+        padding: 4px 10px;
+        border-radius: 2px;
+    }
+
+    .header-search img{
+        width: 6px;
+    }
+    .header-search input{
+        font-size: 6px;
+    }
+    .search-txt{
+        width: 40px;
+    }
+   
+
+
+
+
+    .main-bannerOne {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-bannerOne-img img{
+        width: 100px;
+        height: 140px;
+    }
+    .main-bannerOne-txt h1{
+        font-size: 16px;
+    }
+    .main-bannerOne-txt h4{
+        font-size: 8px;
+    }
+
+    /* каталог */
+    .main-bannerTwo {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .main-card {
+        border-radius: 10px;
+        transition: 0.2s;
+        width: 150px;
+        height: 100px;
+    }
+    .main-card h1{
+        font-size: 10px;
+    }
+
+    .main-card img{
+        width: 70px;
+    }
+
+    .main-h1 h1{
+        font-size: 16px;
+    }
+
+
+
+
+    /* карточки с продуктами */
+    .main-full-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .main-full-card-img img{
+        width: 150px;
+    }
+    .main-full-card-txt {
+        background: #F5F5F5;
+        width: 150px;
+        padding: 14px;
+    }
+
+    .main-full-card-txt h3{
+        font-size: 12px;
+    }
+    .main-full-card-txt p{
+        font-size: 8px;
+    }
+    
+
+    /* футер */
+    .footer-container {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    .footer-nameCompany p{
+        font-size: 6px;
+    }
+
+    .footer-contact {
+        display: flex;
+        gap: 4px;
+    }
+    .footer-contact p,a{
+        font-size: 6px;
+    }
+    .footer-inner img{
+        width: 60px;
+    }
+}
